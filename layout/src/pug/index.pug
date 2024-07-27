@@ -1,14 +1,9 @@
 extends layout/app
 
 block page
-   include chunk/header
-
-   h1.title Главная
-
-   img(src="img/sierra.jpeg", width="50%")
-
-   ul.news
-      each item in news
-         li= item.name
-
-   include chunk/footer
+   div(class="g-wrap global index-page")
+      div(class="outer-bg")
+         include chunk/header
+         main(class="g-main")
+            include index/banner
+            include chunk/footer
