@@ -41,13 +41,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
 ::-webkit-scrollbar-thumb {
     display: none;
-} */
+}
 
 body {
     font-size: 1rem;
@@ -131,24 +131,32 @@ main {
 
 .btn {
     display: block;
-    background: $color-accent;
     color: #fff;
-    padding: 11px 22px;
-    font-size: 16px;
-    font-weight: 700;
+    border: 1px solid #fff;
+    padding: 10px 39px;
+    font-size: 20px;
     width: fit-content;
-    border-radius: 10px;
     height: fit-content;
     font-family: $font-family;
-    border: none;
     cursor: pointer;
     transition: $transition;
     white-space: nowrap;
+    min-width: 200px;
+    text-align: center;
+
+    &.filled {
+        border-color: $color-accent;
+        background: $color-accent;
+    }
 
     img,
     svg {
         pointer-events: none;
     }
+}
+
+.block {
+    margin-top: 80px;
 }
 
 @import "chunk/*.scss";
