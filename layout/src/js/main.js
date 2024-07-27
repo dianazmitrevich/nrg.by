@@ -9,8 +9,14 @@ $(".restaurants__cards .cards__list").slick({
     arrows: false,
     dots: false,
     infinite: false,
-    // slidesToShow: 3,
     variableWidth: true,
+});
+
+$(".main-events .events__wrap.slider").slick({
+    dots: false,
+    fade: true,
+    prevArrow: $(".main-events .events__left"),
+    nextArrow: $(".main-events .events__right"),
 });
 
 let menuToggles = document.querySelectorAll(".menu-toggle");
