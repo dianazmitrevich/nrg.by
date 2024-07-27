@@ -5,7 +5,7 @@ $(".main-banner .banner__slider").slick({
     dots: true,
 });
 
-$(".restaurants__cards .cards__list").slick({
+$(".restaurants-cards .cards__list").slick({
     arrows: false,
     dots: false,
     infinite: false,
@@ -60,3 +60,8 @@ d_tabs.forEach((d_tab) => {
         });
     });
 });
+
+ScrollReveal().reveal(".main-newsfeed", { delay: 500 });
+ScrollReveal().reveal(".restaurants-cards", { delay: 500 });
+ScrollReveal().reveal(".main-events", { delay: 500 });
+ScrollReveal().reveal(".restonav", { delay: 500 });
