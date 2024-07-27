@@ -15,7 +15,7 @@
   \************************/
 /***/ (function() {
 
-eval("$(\".main-banner .banner__slider\").slick({\n    autoplay: true,\n    autoplaySpeed: 3000,\n    arrows: false,\n    dots: true,\n});\n\n\n//# sourceURL=webpack://gulp-starter/./src/js/main.js?");
+eval("$(\".main-banner .banner__slider\").slick({\n    autoplay: true,\n    autoplaySpeed: 3000,\n    arrows: false,\n    dots: true,\n});\n\nlet menuToggles = document.querySelectorAll(\".menu-toggle\");\nlet menu = document.querySelector(\".header .menu\");\nlet body = document.querySelector(\"body\");\n\nmenuToggles.forEach((menuToggle) => {\n    menuToggle.addEventListener(\"click\", () => {\n        menu.classList.toggle(\"show\");\n        body.classList.toggle(\"stop-scroll\");\n    });\n});\n\ndocument.addEventListener(\"click\", (event) => {\n    if (!menu.contains(event.target) && ![...menuToggles].some((toggle) => toggle.contains(event.target))) {\n        menu.classList.remove(\"show\");\n        body.classList.remove(\"stop-scroll\");\n    }\n});\n\n\n//# sourceURL=webpack://gulp-starter/./src/js/main.js?");
 
 /***/ })
 
