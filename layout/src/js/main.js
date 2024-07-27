@@ -5,6 +5,14 @@ $(".main-banner .banner__slider").slick({
     dots: true,
 });
 
+$(".restaurants__cards .cards__list").slick({
+    arrows: false,
+    dots: false,
+    infinite: false,
+    // slidesToShow: 3,
+    variableWidth: true,
+});
+
 let menuToggles = document.querySelectorAll(".menu-toggle");
 let menu = document.querySelector(".header .menu");
 let body = document.querySelector("body");
