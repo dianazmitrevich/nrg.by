@@ -2,6 +2,7 @@ $font-family: "Cormorant", serif;
 $font-weight: 400;
 $font-size: 16px;
 $color-accent: #756d7b;
+$color-grey: #f9f9f9;
 $transition: all 0.2s ease-in-out;
 
 @mixin mobile {
@@ -54,6 +55,7 @@ body {
     font-weight: $font-weight;
     overflow-x: hidden;
     overflow-y: scroll;
+    background: $color-grey;
     color: #000;
 }
 

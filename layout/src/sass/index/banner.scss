@@ -2,6 +2,81 @@
     .banner__wrapper {
         width: 100%;
         height: 100vh;
+    }
+
+    .banner-wrap {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
         overflow: hidden;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .banner__slider {
+        width: 100%;
+        height: 100%;
+
+        .slick-list,
+        .slick-track {
+            height: 100%;
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9;
+
+            li {
+                list-style: none;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: transparent;
+                outline: 1px solid $color-grey;
+                outline-offset: -1px;
+                cursor: pointer;
+                transition: $transition;
+
+                button {
+                    display: none;
+                }
+
+                &.slick-active {
+                    background: $color-grey;
+                }
+            }
+        }
+    }
+
+    .banner__slide {
+        height: 100%;
+
+        .img-cage {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .banner__wrap {
+        width: 100%;
+        height: 100vh;
+        pointer-events: none;
+    }
+
+    .banner__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

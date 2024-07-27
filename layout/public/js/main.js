@@ -15,7 +15,7 @@
   \************************/
 /***/ (function() {
 
-eval("$(\".single-item\").slick();\n\n\n//# sourceURL=webpack://gulp-starter/./src/js/main.js?");
+eval("$(\".main-banner .banner__slider\").slick({\n    autoplay: true,\n    autoplaySpeed: 3000,\n    arrows: false,\n    dots: true,\n});\n\n\n//# sourceURL=webpack://gulp-starter/./src/js/main.js?");
 
 /***/ })
 
