@@ -149,6 +149,11 @@ main {
         background: $color-accent;
     }
 
+    &.darker {
+        color: $color-accent;
+        border: 1px solid $color-accent;
+    }
+
     img,
     svg {
         pointer-events: none;
@@ -168,3 +173,4 @@ main {
 
 @import "chunk/*.scss";
 @import "index/*.scss";
+@import "events/*.scss";
