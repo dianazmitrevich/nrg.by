@@ -1,0 +1,21 @@
+.restonav.inner {
+    margin-bottom: 80px;
+
+    .restonav__item {
+        flex: 1;
+
+        .item__info {
+            display: flex;
+            gap: 20px;
+            font-size: 2em;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
