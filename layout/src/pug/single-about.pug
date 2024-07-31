@@ -1,0 +1,11 @@
+extends layout/app
+
+block page
+   div(class="g-wrap global index-page the-view")
+      div(class="outer-bg")
+         include chunk/header
+         main(class="g-main")
+            include single/content
+            include single/map
+            include single/content-block
+            include chunk/footer
