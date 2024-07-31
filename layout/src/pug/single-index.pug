@@ -1,0 +1,13 @@
+extends layout/app
+
+block page
+   div(class="g-wrap global single-page the-view")
+      div(class="outer-bg")
+         include chunk/header
+         main(class="g-main")
+            include index/banner
+            include index/newsfeed
+            include index/cards
+            include index/events
+            include index/restonav
+            include chunk/footer

@@ -16,8 +16,8 @@
         cursor: pointer;
 
         &.selected {
-            background: $color-accent;
-            border-color: $color-accent;
+            background: var(--color-accent);
+            border-color: var(--color-accent);
             color: #fff;
         }
 
