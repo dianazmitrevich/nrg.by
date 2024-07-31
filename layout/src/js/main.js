@@ -19,6 +19,15 @@ $(".main-events .events__wrap.slider").slick({
     nextArrow: $(".main-events .events__right"),
 });
 
+$(".images-slider .slider__items").slick({
+    arrows: false,
+    dots: false,
+    infinite: true,
+    variableWidth: true,
+    centerMode: true,
+    swipeToSlide: true,
+});
+
 let menuToggles = document.querySelectorAll(".menu-toggle");
 let menu = document.querySelector(".header .menu");
 let body = document.querySelector("body");

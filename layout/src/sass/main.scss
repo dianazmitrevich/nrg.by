@@ -44,7 +44,7 @@ $transition: all 0.2s ease-in-out;
 
 html {
     font-size: $font-size;
-    line-height: 1;
+    // line-height: 1;
     scroll-behavior: smooth;
 }
 
@@ -183,3 +183,4 @@ main {
 @import "events/*.scss";
 @import "event/*.scss";
 @import "about/*.scss";
+@import "single/*.scss";

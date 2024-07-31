@@ -1,0 +1,15 @@
+.accent-text {
+    .text__wrapper {
+        p {
+            font-size: 4em;
+            text-transform: uppercase;
+            font-weight: 700;
+            max-width: 850px;
+            display: block;
+
+            span {
+                color: var(--color-accent);
+            }
+        }
+    }
+}

@@ -29,6 +29,14 @@
         align-items: center;
         justify-content: flex-end;
     }
+
+    &:has(.header__instagram) {
+        gap: 40px;
+
+        .header__lang {
+            margin-right: 0;
+        }
+    }
 }
 
 .header__email {
